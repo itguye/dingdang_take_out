@@ -12,6 +12,7 @@
 
 清理Redis中的缓存和七牛云的垃圾数据:
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/1dfbda3ddc744724ba87ce01b0fbf2de.png)
+
 清理数据库和七牛云中的垃圾数据:
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/3a18b1d8404141a9bfd36f85af8f9658.png)
 
