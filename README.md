@@ -8,6 +8,8 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/dd0afc300b974da993bd05a793401e94.png)
 #### (3) 垃圾清理端
 > 垃圾清理源码:[https://github.com/itguye/dingdangtakeout_quartz_clearpictures.git](https://github.com/itguye/dingdangtakeout_quartz_clearpictures.git)
+
+
 清理Redis中的缓存和七牛云的垃圾数据:
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/1dfbda3ddc744724ba87ce01b0fbf2de.png)
 清理数据库和七牛云中的垃圾数据:
