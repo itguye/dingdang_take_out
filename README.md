@@ -28,6 +28,7 @@
 > ④ Spring Data Redis和SpringCache
 > ⑤ Mysql
 > ⑥ Quartz定时组件
+> ⑦ 七牛云
 
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/9413e0de4038477bafddc3dbd9608875.png)
@@ -36,7 +37,7 @@
  
 > 安装可参考下面三篇博客:
 > [Linux centos7.0搭建Java开发环境(保姆级教程)](https://blog.csdn.net/weixin_42753193/article/details/125964013),
-> [Linux centOs7.0安装宝塔面板(保姆级教程)](https://blog.csdn.net/weixin_42753193/article/details/125959289)
+> [Linux centOs7.0安装宝塔面板(保姆级教程)](https://blog.csdn.net/weixin_42753193/article/details/125959289)和
 > [Linux安装maven(详细教程)](https://blog.csdn.net/weixin_58276266/article/details/122566931?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165920414716781432938137%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165920414716781432938137&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-122566931-null-null.142%5Ev35%5Epc_search_result_control_group&utm_term=linux%20%E5%AE%89%E8%A3%85Maven&spm=1018.2226.3001.4187)
 > 服务器端需要安装如下软件:
 >① JDK
@@ -45,7 +46,6 @@
 >④ Redis
 >⑤ Mysql
 >⑥ Maven
->⑦ 七牛云
 > 
 
 备注:Redis和MySql我是通过宝塔面板进行安装。
