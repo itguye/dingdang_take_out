@@ -20,14 +20,14 @@
 
  ### 2.技术栈
 > 后台管理端和前台移动端主要使用SpringBoot+Mybatis-Plus实现数据库的CRUD操作,项目中的图片上传与下载采用七牛云,数据缓存使用Redis,共二种方式 Spring Data Redis和SpringCache,垃圾清理端主要采用Spring+MyBatis实现数据的查询与删除操作,采用Quartz定时组件实现每周星期天晚上23点清理数据库中的垃圾数据(被后台管理端删除后的数据,采用了逻辑删除),每日晚23点清理Redis缓存数据(用于记录七牛云中所有上传图片和上传到数据库中图片的数据)和七牛云中的垃圾数据。
-> 相关知识点如下:
+> 
+> 相关知识点如下: 
 > ① SpringBoot和Spring
 > ② MyBatis 和 Mybatis-Plus
 > ③ Redis
 > ④ Spring Data Redis和SpringCache
 > ⑤ Mysql
-> ⑥ 七牛云
-> ⑦ Quartz定时组件
+> ⑥ Quartz定时组件
 
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/9413e0de4038477bafddc3dbd9608875.png)
