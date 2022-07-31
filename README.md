@@ -7,12 +7,13 @@
 #### (2) 前台移动端
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/dd0afc300b974da993bd05a793401e94.png)
 #### (3) 垃圾清理端
+> 垃圾清理源码:[https://github.com/itguye/dingdangtakeout_quartz_clearpictures.git](https://github.com/itguye/dingdangtakeout_quartz_clearpictures.git)
 清理Redis中的缓存和七牛云的垃圾数据:
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/1dfbda3ddc744724ba87ce01b0fbf2de.png)
 清理数据库和七牛云中的垃圾数据:
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/3a18b1d8404141a9bfd36f85af8f9658.png)
 
-源码链接:垃圾清理源码:[https://github.com/itguye/dingdangtakeout_quartz_clearpictures.git](https://github.com/itguye/dingdangtakeout_quartz_clearpictures.git)
+
 
  ### 2.技术栈
 > 后台管理端和前台移动端主要使用SpringBoot+Mybatis-Plus实现数据库的CRUD操作,项目中的图片上传与下载采用七牛云,数据缓存使用Redis,共二种方式 Spring Data Redis和SpringCache,垃圾清理端主要采用Spring+MyBatis实现数据的查询与删除操作,采用Quartz定时组件实现每周星期天晚上23点清理数据库中的垃圾数据(被后台管理端删除后的数据,采用了逻辑删除),每日晚23点清理Redis缓存数据(用于记录七牛云中所有上传图片和上传到数据库中图片的数据)和七牛云中的垃圾数据。
