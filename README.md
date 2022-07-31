@@ -106,9 +106,11 @@ git clone https://github.com/itguye/dingdang_take_out.git
 - 修改项目配置文件application.yaml
 
 服务端口号与数据库配置:
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/e048c23decc047cf83117b806974f2af.png)
 
 Redis和mybatis-plus的配置:
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/9022e88f7a1c415fbd7d5eee513281da.png)
 
 
@@ -119,9 +121,11 @@ Redis和mybatis-plus的配置:
 - 文件上传与下载七牛云配置
 
 修改七牛云工具类的配置:
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/81e597cb865b4da7b3a45ff14bbffcb5.png)
 
 修改如下参数:
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/0da27e42e9054c65a2422ef10228b93f.png)
 
 
@@ -146,6 +150,7 @@ Redis和mybatis-plus的配置:
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/042bbc62eee44b6595f128f997e5fdff.png)
 
 你可以通过全局搜索进行快速定位
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/71f239c09b354a42a75423c29b839322.png)
 前端如下几处需要进行修改:
 
@@ -159,6 +164,7 @@ Redis和mybatis-plus的配置:
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/a023b95d5d8f4372b054ab26bfe386e0.png)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/c907c5be23414a4690847e0cb1b96752.png)
+
 前台移动端:
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/28f659c8e6e345899232a767506dad28.png)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/909a798e54b54692bca040d0bcdffe54.png)
@@ -175,13 +181,17 @@ shell存放在项目中的shell文件下:
 - 第一个项目的部署(后台服务端与前台服务端叮当外卖)
 
 通过脚本的方式执行程序(需要先在Linux相应文件下git clone自己的项目,更新后执行下面的脚本即可)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/b4c4e60aba9f45a1bafa596556b48ab2.png)
+
 当然你也可以通过执行 **`java -jar 项目`** 的方式执行项目
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/706f8bb5a93e4c3b921d6975509db6ec.png)
 
  - 第二个项目的部署,垃圾清理
 
 只需要将生成后的war包放入到Tomcat下的webapps中即可
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/6553c1c4635144079b5cb82457cef5e6.png)
 
 
@@ -192,6 +202,8 @@ shell存放在项目中的shell文件下:
  
 
  - 后台登入
+
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/ddc6805525f74da182c776b411ac8748.png)
 
  - 员工管理
@@ -250,6 +262,8 @@ shell存放在项目中的shell文件下:
 > 垃圾清理打包成war放入Tomcat的webapps中,由于定时组件的原因会根据core表达式在某一个具体时间执行,共二个任务,任务1执行清理Redis缓存和七牛云的垃圾数据,任务2执行清理数据库中和七牛云的垃圾数据。
 
 清理Redis中的缓存和七牛云的垃圾数据:
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/1dfbda3ddc744724ba87ce01b0fbf2de.png)
 清理数据库和七牛云中的垃圾数据:
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/3a18b1d8404141a9bfd36f85af8f9658.png)
