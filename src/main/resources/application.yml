@@ -1,0 +1,61 @@
+server:
+  port: 8089
+spring:
+  application:
+    #应用的名称，可选
+    name: reggie_take_out
+  datasource:
+      # com.mysql.cj.jdbc.Driver对应Mysql8.0
+      driver-class-name:  com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost/dingdang?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+      #初始化链接数量
+      initialSize: 5
+      #最小空闲链接数
+      minIdle: 5
+      #最大并发连接数
+      maxActive: 10
+      #获取链接等待超时的时间
+      maxWait: 10000
+      #配置间隔多久才进行一次检测,检测需要关闭的空闲链接,单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      #内部jackson
+      jackson:
+      #json格式
+      date-format: yyyy-MM-dd HH:mm:ss
+      #时区
+      time-zone: GMT+8
+      type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: 192.168.0.1
+    port: 3000
+    password: 123456
+    database: 0
+    jedis:
+      pool:
+        max-idle: 100
+        max-active: 100
+        max-wait: 1000
+        min-idle: 10
+  cache:
+    redis:
+      time-to-live: 1800000 #设置缓存数据的过期时间
+
+mybatis-plus:
+  configuration:
+    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+      logic-delete-field: isDeleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+
+
+image-file:
+  path: D:\IDEA\Projects\dingdang_take_out\image\
+
